@@ -15,7 +15,7 @@ from scipy.spatial.distance import cdist
 class FarmModel(BaseModel):
     
     def __init__(self, desvars_init, warmstart_file, input_file, calls_between_saving=1, wd=np.arange(0, 360, 60), ws=np.arange(0, 26, 2)):
-        super(FarmModel, self).__init__(desvars_init, warmstart_file)
+        super(FarmModel, self).__init__(desvars_init, warmstart_file, calls_between_saving)
         # Initialize the FLORIS interface fi
         this_directory = os.path.abspath(os.path.dirname(__file__))
         input_file = os.path.join(this_directory, input_file)
@@ -80,6 +80,6 @@ class FarmModel(BaseModel):
         
         outputs['turb_spacing'] = KS_constraint[0][0]
         
-        print('Computing AEP for ', self.type, outputs['AEP'])
+        print('Computing AEP for', self.type, outputs['AEP'])
         
         return outputs

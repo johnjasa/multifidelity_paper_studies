@@ -18,7 +18,7 @@ desvars = {
 
 wd = np.linspace(0, 360, 6)
 ws = np.linspace(0, 26, 5)
-model_low = FarmModel(desvars, 'jensen.pkl', input_file="jensen_input.json", wd=wd, ws=ws)
+model_low = FarmModel(desvars, 'jensen.pkl', input_file="jensen_input.json", calls_between_saving=100, wd=wd, ws=ws)
 
 wd = np.linspace(0, 360, 18)
 ws = np.linspace(0, 26, 14)
