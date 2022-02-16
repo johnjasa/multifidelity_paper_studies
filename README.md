@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/459296249.svg)](https://zenodo.org/badge/latestdoi/459296249)
+
 # Multifidelity paper studies
 Code to perform case studies for [Jasa et al's 2022 Wind Energy Science paper on multifidelity optimization.](https://wes.copernicus.org/preprints/wes-2021-56/)
 
